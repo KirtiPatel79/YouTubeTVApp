@@ -1,0 +1,16 @@
+{
+  "name": "react-native-android-tv-youtube",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "android-tv": "react-native run-android --variant=tvDebug"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.66.0",
+    "react-native-youtube-iframe": "^2.1.0",
+    "react-navigation": "^4.4.4"
+  }
+}

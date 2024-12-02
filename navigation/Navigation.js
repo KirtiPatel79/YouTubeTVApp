@@ -3,7 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import { useTVEventHandler } from 'react-native';
-import App from '../App';
 import YouTubePlayer from '../components/YouTubePlayer';
 import ChannelFetcher from '../components/ChannelFetcher';
 
@@ -23,7 +22,7 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={App} />
+        <Stack.Screen name="Home" component={ChannelFetcher} />
         <Stack.Screen name="YouTubePlayer" component={YouTubePlayer} />
         <Stack.Screen name="ChannelFetcher" component={ChannelFetcher} />
       </Stack.Navigator>

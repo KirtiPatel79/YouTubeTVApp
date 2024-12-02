@@ -10,7 +10,7 @@ const ChannelFetcher = ({ onLiveStream }) => {
     const fetchChannelData = async () => {
       try {
         const response = await axios.get(
-          `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=YOUR_CHANNEL_ID&eventType=live&type=video&key=YOUR_API_KEY`
+          `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&eventType=live&type=video&key=AIzaSyD-1Q2e3X4Y5Z6Z7Z8Z9Z0Z1Z2Z3Z4Z5Z6`
         );
         const liveStream = response.data.items[0];
         if (liveStream) {
